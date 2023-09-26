@@ -179,20 +179,20 @@ function showResult(){
         
         iconcontainer.innerHTML = "<i class='fas fa-crown'></i>"
         // if user scored more than 3
-        //creating a new span tag and passing the user score number and total  number
-        let scoreTag = '<span>Glückwunsch! , Sie haben <p>'+ userScore +'</p> von <p>'+ s.length +'</p></span>';
+        //creating a new span tag and passing the user score number and total question number
+        let scoreTag = '<span>Glückwunsch! Sie haben <p>'+ userScore +'</p> von <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 1){ // if user scored more than 1
         
         iconcontainer.innerHTML ="<i class='fa-solid fa-face-smile-beam' ></i>"
-        let scoreTag = '<span>Schön, Sie haben <p>'+ userScore +'</p> von <p>'+ s.length +'</p></span>';
+        let scoreTag = '<span>Schön! Sie haben <p>'+ userScore +'</p> von <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
          
         iconcontainer.innerHTML = "<i class='fa-solid fa-face-dizzy'></i>"
-        let scoreTag = '<span>Entschuldigung, Sie haben <p>'+ userScore +'</p> von <p>'+ s.length +'</p>Kein Problem, versuchen Sie es noch einmal!</span>';
+        let scoreTag = '<span>Entschuldigung, Sie haben <p>'+ userScore +'</p> von <p>'+ questions.length +"</p></span><span id='centerit''>Kein Problem, Try again!</span>";
         scoreText.innerHTML = scoreTag;
     }
 }
@@ -241,7 +241,7 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> von <p>'+ questions.length +'</p> Fragen</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> von <p>'+ questions.length +'</p> Frangen</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
