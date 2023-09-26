@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function rdmquestion() {
+  if (!rdmquestion.numbers) {
+    rdmquestion.numbers = shuffleArray([1, 2, 3, 4, 5]);
+  }
+  
+  if (rdmquestion.numbers.length === 0) {
+    rdmquestion.numbers = shuffleArray([1, 2, 3, 4, 5]);
+  }
+
+  return rdmquestion
+.numbers.pop();
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Example usage:
+console.log(rdmquestion()); // Output will be a random number between 1 and 5
+console.log(rdmquestion());
+console.log(rdmquestion());
+console.log(rdmquestion());
+console.log(rdmquestion());
+
+
+    </script>
+</body>
+</html>
