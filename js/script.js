@@ -192,7 +192,7 @@ function showResult(){
     else{ // if user scored less than 1
          
         iconcontainer.innerHTML = "<i class='fa-solid fa-face-dizzy'></i>"
-        let scoreTag = '<span>Entschuldigung, Sie haben <p>'+ userScore +'</p> von <p>'+ s.length +'<br> Kein Problem, versuchen Sie es noch einmal!</p></span>';
+        let scoreTag = '<span>Entschuldigung, Sie haben <p>'+ userScore +'</p> von <p>'+ s.length +'</p>Kein Problem, versuchen Sie es noch einmal!</span>';
         scoreText.innerHTML = scoreTag;
     }
 }
