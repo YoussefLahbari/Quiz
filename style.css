@@ -382,3 +382,7 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+#centerit{
+    position: relative;
+    left: 15%;
+}
